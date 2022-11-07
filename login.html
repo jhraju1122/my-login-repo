@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .login-container{
+display: flex;
+justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input, button{
+           font-size: 1.3em;
+           margin-top: 10px;
+           border: 1px solid  rgb(224, 74, 15);
+           padding-left: 10px;
+        }
+        .login-form button{
+            background-color: rgb(252, 118, 8);
+        }
+        .login-form button:hover{
+            background-color: rgb(17, 238, 10);
+            color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    <h2>jh raju</h2>
+    <h1>login</h1>
+    <div class="login-container">
+    <form action="" class="login-form">
+        <input type="email" name="email" placeholder="your email" id="" required>
+        <input type="password" name="password" placeholder="your password" id="" required>
+        <button type="submit">login</button>
+    </form>
+    </div>
 </body>
 </html>
